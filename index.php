@@ -132,7 +132,7 @@ h2 {
 <h2 class="mt-5 pt-3">Credit and participation</h2>
 
 <p>Developed by <a href="http://www.pmoran.ie">Pádraic Moran</a>, University of Galway. </p>
-<p>Source files are available on GitHub and may be re-used freely.</p>
+<p>Source files are available on <a href="https://github.com/padraicmoran/mslink/">GitHub</a> and may be re-used freely.</p>
 <p>To add links to your manuscript project, contact <a href="mailto:padraic.moran@universityofgalway.ie">padraic.moran@universityofgalway.ie</a>.</p>
 
 <?php
