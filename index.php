@@ -141,7 +141,8 @@ a, a:visited {
 
 <p>Developed by <a href="http://www.pmoran.ie">Pádraic Moran</a>, University of Galway. </p>
 <p>Source files are available on <a href="https://github.com/padraicmoran/mslink/">GitHub</a> and may be re-used freely.</p>
-<p>To add links to your manuscript project, contact <a href="mailto:padraic.moran@universityofgalway.ie">padraic.moran@universityofgalway.ie</a>.</p>
+<p>To add links to your manuscript project, contact <a href="mailto:padraic.moran@universityofgalway.ie">padraic.moran@universityofgalway.ie</a>.
+Data can be supplied in a simple CSV file, with columns for catalogue code (currently "cla" or "bkat"), manuscript identifier and associated project URL.</p>
 
 <p class="mt-5"><a href="?">Search page…</a></p>
 
