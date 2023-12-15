@@ -70,9 +70,13 @@ if ($out == 'html') {
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 <title>Manuscript Linking Service (mslink)</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500" />
+
 <style>
 
 body {
+	font-family: 'Open Sans', sans-serif;
 	font-size: 1.2em;
 }
 h1, .display-6 {
@@ -81,14 +85,18 @@ h1, .display-6 {
 h2 {
 	font-size: 1.5em;
 }
+a, a:visited {
+	color:  #2874a6;
+}	
 
 </style>
+
 </head>
 <body class="bg-light">
 
 <div class="container mt-5">
 
-<h1><a class="text-reset" href="index.php">Manuscript Linking Service (mslink)</a></h1>
+<h1><a class="text-reset text-decoration-none" href="?">Manuscript Linking Service (mslink)</a></h1>
 
 <p class="display-6 mb-5">Linking online data for medieval manuscripts</p>
 
@@ -129,11 +137,13 @@ h2 {
 		print '</table>';
 ?>
 
-<h2 class="mt-5 pt-3">Credit and participation</h2>
+<h2 class="mt-5 pt-3 mb-4">Credit and participation</h2>
 
 <p>Developed by <a href="http://www.pmoran.ie">Pádraic Moran</a>, University of Galway. </p>
 <p>Source files are available on <a href="https://github.com/padraicmoran/mslink/">GitHub</a> and may be re-used freely.</p>
 <p>To add links to your manuscript project, contact <a href="mailto:padraic.moran@universityofgalway.ie">padraic.moran@universityofgalway.ie</a>.</p>
+
+<p class="mt-5"><a href="?">Search page…</a></p>
 
 <?php
 
@@ -149,8 +159,8 @@ h2 {
 
 <form method="get">
 	<div class="row p-1">
-		<div class="col-2"><label for="formCat" class="form-label">Catalogue</label></div>
-		<div class="col-6">
+		<div class="col-sm-2"><label for="formCat" class="form-label">Catalogue</label></div>
+		<div class="col-sm-6">
 			<select name="cat" id="formCat" class="form-select">
 <?php
 
@@ -167,12 +177,12 @@ h2 {
 		</div>
 	</div>
 	<div class="row p-1">
-		<div class="col-2"><label for="formIdent" class="form-label">Identifier</label></div>
-		<div class="col-6"><input class="form-control" type="text" name="id" id="formIdent" value="<?php print $id; ?>" /></div>
+		<div class="col-sm-2"><label for="formIdent" class="form-label">Identifier</label></div>
+		<div class="col-sm-6"><input class="form-control" type="text" name="id" id="formIdent" value="<?php print $id; ?>" /></div>
 	</div>
 	<div class="row p-1">
-		<div class="col-2">Output</div>
-		<div class="col-6">
+		<div class="col-sm-2">Output</div>
+		<div class="col-sm-6">
 			<input class="form-check-input" type="radio" name="out" value="" id="formOutput1" checked="checked" />
 			<label for="formOutput1" class="form-label">HTML</label>
 			<input class="form-check-input ms-5" type="radio" name="out" value="xml" id="formOutput2" />
@@ -182,8 +192,8 @@ h2 {
 		</div>
 	</div>
 	<div class="row p-1">
-		<div class="col-2"></div>
-		<div class="col-6"><button type="submit" class="btn btn-primary">Submit</button></div>
+		<div class="col-sm-2"></div>
+		<div class="col-sm-6"><button type="submit" class="btn btn-primary">Submit</button></div>
 	</div>
 </form>
 
