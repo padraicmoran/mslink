@@ -21,7 +21,7 @@ You may freely copy the files to any other online location.
 
 Developed by Pádraic Moran (http://www.pmoran.ie), University of Galway. 
 
-To add links to your manuscript project, contact padraic.moran@universityofgalway.ie.
+To add links to your manuscript project, contact padraic.moran@universityofgalway.ie. Data can be supplied in a simple CSV file, with columns for catalogue code (currently "cla" or "bkat"), manuscript identifier and associated project URL.
 
 
 
